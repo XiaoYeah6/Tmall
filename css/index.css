@@ -1,54 +1,24 @@
-#header{
-    height: 32px;
-    background: #f2f2f2;
-    line-height: 32px;
-    font-size: 12px;
-}
-
-#login-info a:hover,#quick-menu a:hover{
-    color: red;
-}
-
-#login-info,#login-info a{
-    padding-left: 12px;
-}
-
-#quick-menu a{
-    padding-left: 16px;
-}
-
-#login-info,#login-info a,#quick-menu a{
-    color: #999999;
-}
-
-#login-info{
-    float: left;
-}
-
 #quick-menu{
     float: right;
 }
 
-#quick-menu >li{
+#quick-menu .menu{
     float: left;
 }
 
-#header .wrapper{
+#login-info span,#login-info a{
+    float: left;
+}
+
+#header{
+    height: 32px;
     background: #f2f2f2;
+    font-size: 12px;
 }
 
-#quick-menu .follow-menu{
-    position: relative;
-}
+#login-info span,#login-info a,#quick-menu a
 
-#quick-menu .arrow{
-    width: 0;
-    height: 0;
-    border-width: 3px;
-    border-color: #999999 transparent transparent transparent;
-    border-style: solid;
-    position: absolute;
-    top: 50%;
-    right: -9px;
+#login-info span,#login-info a,#quick-menu a{
+    line-height: 32px;
 }
 
