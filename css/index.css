@@ -4,10 +4,13 @@
 
 #quick-menu .menu{
     float: left;
+    padding-right: 14px;
+    position: relative;
 }
 
 #login-info span,#login-info a{
     float: left;
+    padding-left: 12px;
 }
 
 #header{
@@ -16,9 +19,59 @@
     font-size: 12px;
 }
 
-#login-info span,#login-info a,#quick-menu a
+#login-info span,#login-info a,#quick-menu li{
+    height: 32px;
+}
 
 #login-info span,#login-info a,#quick-menu a{
     line-height: 32px;
+    color: #999999;
 }
 
+#login-info a:hover,#quick-menu .menu:hover a{
+    color: red;
+}
+
+#quick-menu .iconfont{
+    color: red;
+    font-size: 12px;
+}
+
+#quick-menu .arrow{
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #999999 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+}
+
+#quick-menu .change-bg a:hover,#quick-menu .submenu li:hover{
+    text-decoration: underline;
+}
+
+#quick-menu .change-bg:hover{
+    background: #ffffff;
+}
+
+#quick-menu .submenu{
+    position: absolute;
+    line-height: 32px;
+}
+
+#quick-menu .submenu li:hover{
+    color: red;
+}
+
+#quick-menu .submenu li{
+    cursor: pointer;
+    background: #ffffff;
+    display: none;
+}
+
+#quick-menu .menu:hover li{
+    display: block;
+    width: 96px;
+}
