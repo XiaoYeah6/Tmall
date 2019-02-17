@@ -75,3 +75,23 @@
     display: block;
     width: 96px;
 }
+
+#quick-menu .menu img{
+    display: none;
+    border: solid;
+    border-width: 1px;
+    border-color: #999999;
+    position: absolute;
+    left: -79px;
+    top: 25px;
+}
+
+#quick-menu .menu:hover img{
+    display: block;
+}
+
+#submenu-width{
+    width: 110px;
+    top: 30px;
+}
+
