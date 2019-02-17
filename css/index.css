@@ -2,7 +2,7 @@
     float: right;
 }
 
-#quick-menu .menu{
+#quick-menu >li{
     float: left;
     padding-right: 14px;
     position: relative;
@@ -28,7 +28,7 @@
     color: #999999;
 }
 
-#login-info a:hover,#quick-menu .menu:hover a{
+#login-info a:hover,#quick-menu .menu:hover > a{
     color: red;
 }
 
@@ -61,7 +61,7 @@
     line-height: 32px;
 }
 
-#quick-menu .submenu li:hover{
+#quick-menu .submenu a:hover{
     color: red;
 }
 
@@ -86,12 +86,44 @@
     top: 25px;
 }
 
-#quick-menu .menu:hover img{
+#quick-menu .menu:hover img {
     display: block;
 }
 
-#submenu-width{
-    width: 110px;
-    top: 30px;
+#quick-menu .sub-width{
+    width: 200px;
+
 }
 
+#quick-menu .sub-width li{
+    float: left;
+}
+
+#quick-menu .sub-wrapper{
+    display: none;
+    position: absolute;
+    border: 1px solid #eee;
+    left: -67px;
+    padding: 10px 8px;
+}
+
+
+
+#quick-menu .position{
+    width: 110px;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #999;
+}
+
+#quick-menu .position >li{
+    padding-right: 5px;
+    line-height: 22px;
+}
+
+#quick-menu >li:hover .sub-wrapper{
+    display: block;
+}
+ #quick-menu .sub-wrapper li:hover a{
+    color: red;
+}
