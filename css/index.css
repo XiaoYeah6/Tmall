@@ -56,7 +56,7 @@
     border-top: transparent;
 }
 
-#quick-menu .submenu a:hover{
+#quick-menu .submenu a:hover,#quick-menu .change-bg >a:hover{
     color: red;
 }
 
@@ -68,7 +68,7 @@
 
 #quick-menu .menu:hover li{
     display: block;
-    width: 96px;
+    /*width: 96px;*/
 }
 
 #quick-menu .menu img{
@@ -78,7 +78,7 @@
     border-color: #999999;
     position: absolute;
     left: -79px;
-    top: 25px;
+    top: 30px;
 }
 
 #quick-menu .menu:hover img {
@@ -86,32 +86,23 @@
 }
 
 #quick-menu .sub-width{
-    width: 200px;
-
-}
-
-#quick-menu .sub-width li{
-    float: left;
+    width: 115px;
 }
 
 #quick-menu .sub-wrapper{
     display: none;
     position: absolute;
     border: 1px solid #eee;
-    left: -67px;
+    left: -64.5px;
     padding: 10px 8px;
-}
-
-#quick-menu .position{
+    border-top: transparent;
     width: 110px;
-    border-bottom-width: 1px;
-    border-bottom-style: dotted;
-    border-bottom-color: #999;
 }
 
-#quick-menu .position >li{
-    padding-right: 5px;
-    line-height: 22px;
+#quick-menu .sub-wrapper li{
+    padding-right:8px;
+    display: block;
+    float: left;
 }
 
 #quick-menu >li:hover .sub-wrapper{
@@ -141,4 +132,57 @@
      transform:rotate(180deg);
      transform-origin: 3px 1.5px;
      transition: 0.2s linear;
+ }
+
+ #quick-menu .phone-arrow{
+     border-width: 8px;
+     position: absolute;
+     border-color:transparent transparent #ffffff transparent ;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     left: 30px;
+     top: 16px;
+ }
+
+ #quick-menu .phone-dow{
+     width: 175px;
+     height: 227px;
+     border: solid;
+     border-width: 1px;
+     border-color: #999999;
+     position: absolute;
+     left: -50px;
+     top: 30px;
+     box-shadow:1px 1px 6px 1px #999999;
+ }
+
+ #quick-menu .phone-hidden{
+     display: none;
+ }
+
+ #quick-menu .phone:hover .phone-hidden{
+     display:block;
+ }
+
+ #quick-menu .position{
+     border-bottom: dotted;
+     border-width: 1px;
+ }
+
+ #big-submenu{
+     width: 1200px;
+     height: 161px;
+     background: #00ff00;
+     position: absolute;
+     left: -1122px;
+ }
+
+ #big-submenu .bigsub1{
+     width: 455px;
+ }
+
+ #quick-menu .sub-float1 >li{
+     width: 80px;
+     float: left;
  }
