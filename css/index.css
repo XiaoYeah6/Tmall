@@ -60,7 +60,7 @@
     color: red;
 }
 
-#quick-menu .submenu li{
+#quick-menu .submenu >li{
     cursor: pointer;
     background: #ffffff;
     display: none;
@@ -68,7 +68,7 @@
 
 #quick-menu .menu:hover li{
     display: block;
-    /*width: 96px;*/
+    width:96px;
 }
 
 #quick-menu .menu img{
@@ -173,9 +173,8 @@
  #big-submenu{
      width: 1200px;
      height: 161px;
-     background: #00ff00;
      position: absolute;
-     left: -1122px;
+     left: -1118px;
  }
 
  #big-submenu .bigsub1{
@@ -186,3 +185,72 @@
      width: 80px;
      float: left;
  }
+
+ /*#big-submenu{*/
+     /*display:none;*/
+ /*}*/
+
+ #quick-menu .change-bg >a:hover #big-submenu{
+     display: block;
+ }
+
+#right-menu{
+    background: #000000;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 35px;
+    position: fixed;
+}
+
+#right-menu .right-wrapper{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 120px;
+    line-height: 35px;
+    text-align: center;
+}
+
+#right-menu .icon-tianmaoxingxiang1{
+    color: #ffffff;
+    font-size: 23px;
+}
+
+#right-menu .vip{
+    width: 90px;
+    height: 35px;
+    background: #999999;
+    position: absolute;
+    top: 0px;
+    right: 135px;
+    text-align: center;
+    line-height:35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, right .3s ease;
+}
+
+#right-menu .right-wrapper:hover .vip{
+    opacity: 1;
+    right: 35px;
+    visibility: visible;
+}
+
+#right-menu .right-arrow{
+    background: #999999;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    transform: rotate(45deg);
+}
+
+#right-menu .right-wrapper{
+    cursor: pointer;
+}
+
+#right-menu .right-wrapper:hover{
+    background: #ff0000;
+}
