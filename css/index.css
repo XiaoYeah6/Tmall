@@ -186,9 +186,9 @@
      float: left;
  }
 
- /*#big-submenu{*/
-     /*display:none;*/
- /*}*/
+ #big-submenu{
+      display:none;
+  }
 
  #quick-menu .change-bg >a:hover #big-submenu{
      display: block;
